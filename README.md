@@ -34,4 +34,4 @@ Standard diagrams fail to show scale because Earth would be a microscopic speck 
 **Haneen** *UXUI Engineer & Women Techmakers Ambassador* 📍 Alexandria, Egypt
 
 ---
-*Created for the 2026 UX/UI Engineering Portfolio.*
+*Created for the 2026 UX/UI Engineering.*
