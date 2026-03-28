@@ -29,9 +29,6 @@ Standard diagrams fail to show scale because Earth would be a microscopic speck 
 * **APIs Used:** `ARAnchorManager` (Modern `AddComponent<ARAnchor>` implementation for 2026 standards), `ARRaycastManager`.
 * **UI:** TextMeshPro with custom space-themed sprites.
 
-## 📸 Final UI Preview
-*(Upload your onboarding screenshot here)*
-![Onboarding Screen](https://your-link-to-image-here.com)
 
 ## 👩‍💻 Developer
 **Haneen** *UXUI Engineer & Women Techmakers Ambassador* 📍 Alexandria, Egypt
