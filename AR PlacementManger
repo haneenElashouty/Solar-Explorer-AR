@@ -142,16 +142,64 @@ public class ARPlacementManager : MonoBehaviour
         string cleanName = name.Replace("-label", "").Replace("(Clone)", "").Trim();
         titleText.text = cleanName;
 
-        if (cleanName.Contains("Sun")) descriptionText.text = "The star at the heart of our solar system.";
-        else if (cleanName.Contains("Mercury")) descriptionText.text = "The smallest planet and closest to the Sun.";
-        else if (cleanName.Contains("Venus")) descriptionText.text = "The hottest planet in our solar system.";
-        else if (cleanName.Contains("Earth")) descriptionText.text = "Our home planet and the only one with life.";
-        else if (cleanName.Contains("Mars")) descriptionText.text = "The Red Planet, home to the largest volcano.";
-        else if (cleanName.Contains("Jupiter")) descriptionText.text = "The largest planet in our solar system.";
-        else if (cleanName.Contains("Saturn")) descriptionText.text = "Famous for its beautiful ring system.";
-        else if (cleanName.Contains("Uranus")) descriptionText.text = "An ice giant that tilts nearly 90 degrees.";
-        else if (cleanName.Contains("Neptune")) descriptionText.text = "The most distant planet, dark and cold.";
-        else descriptionText.text = "A magnificent celestial body in space!";
+        if (cleanName.Contains("Sun"))
+    {
+        descriptionText.text = "<b>ID:</b> The central star of the Solar System\n\n" +
+                               "<b>Fact:</b> A massive ball of plasma producing most of the system's light and heat\n\n" +
+                               "<b>Context:</b> The primary energy source for life on Earth.";
+    }
+    else if (cleanName.Contains("Mercury"))
+    {
+        descriptionText.text = "<b>ID:</b> The closest planet to the Sun\n\n" +
+                               "<b>Fact:</b> Smallest major planet with a heavily cratered, Moon-like surface\n\n" +
+                               "<b>Context:</b> Used to test extreme heat-shielding models for spacecraft.";
+    }
+    else if (cleanName.Contains("Venus"))
+    {
+        descriptionText.text = "<b>ID:</b> Earth’s “evil twin” planet\n\n" +
+                               "<b>Fact:</b> Hottest planet (460°C) with a crushing greenhouse atmosphere\n\n" +
+                               "<b>Context:</b> Key for studying how Earth-like worlds can become uninhabitable.";
+    }
+    else if (cleanName.Contains("Earth"))
+    {
+        descriptionText.text = "<b>ID:</b> The Blue Planet\n\n" +
+                               "<b>Fact:</b> Only planet with stable liquid-water oceans and a breathable atmosphere\n\n" +
+                               "<b>Context:</b> The only confirmed home of life and base for space exploration.";
+    }
+    else if (cleanName.Contains("Mars"))
+    {
+        descriptionText.text = "<b>ID:</b> The Red Planet\n\n" +
+                               "<b>Fact:</b> Home to the largest volcano (Olympus Mons) in the Solar System\n\n" +
+                               "<b>Context:</b> The most likely candidate for future human settlement.";
+    }
+    else if (cleanName.Contains("Jupiter"))
+    {
+        descriptionText.text = "<b>ID:</b> The gas-giant king\n\n" +
+                               "<b>Fact:</b> Largest planet, more massive than all others combined\n\n" +
+                               "<b>Context:</b> A major gravity-assist “slingshot” target for deep-space probes.";
+    }
+    else if (cleanName.Contains("Saturn"))
+    {
+        descriptionText.text = "<b>ID:</b> The ringed jewel of the Solar System\n\n" +
+                               "<b>Fact:</b> Famous for its bright, icy ring system made of countless particles\n\n" +
+                               "<b>Context:</b> Its moons like Enceladus are possible habitats for life.";
+    }
+    else if (cleanName.Contains("Uranus"))
+    {
+        descriptionText.text = "<b>ID:</b> The sideways ice giant\n\n" +
+                               "<b>Fact:</b> Rotates almost on its side with an atmosphere rich in methane\n\n" +
+                               "<b>Context:</b> One of the least-explored planets, raising interest for future missions.";
+    }
+    else if (cleanName.Contains("Neptune"))
+    {
+        descriptionText.text = "<b>ID:</b> The distant blue giant\n\n" +
+                               "<b>Fact:</b> The farthest planet from the Sun with the fastest recorded winds\n\n" +
+                               "<b>Context:</b> Helps scientists understand how planets form at the system's edge.";
+    }
+    else 
+    {
+        descriptionText.text = "A magnificent celestial body in space!";
+    }
     }
 
     public void CloseInfoPanel()
